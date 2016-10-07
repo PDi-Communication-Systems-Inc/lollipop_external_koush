@@ -123,7 +123,7 @@ public class Settings {
     public static final int NOTIFICATION_TYPE_NONE = 0;
     public static final int NOTIFICATION_TYPE_TOAST = 1;
     public static final int NOTIFICATION_TYPE_NOTIFICATION = 2;
-    public static final int NOTIFICATION_TYPE_DEFAULT = NOTIFICATION_TYPE_TOAST;
+    public static final int NOTIFICATION_TYPE_DEFAULT = NOTIFICATION_TYPE_NONE;
     public static int getNotificationType(Context context) {
         switch (getInt(context, KEY_NOTIFICATION, NOTIFICATION_TYPE_DEFAULT)) {
         case NOTIFICATION_TYPE_NONE:
