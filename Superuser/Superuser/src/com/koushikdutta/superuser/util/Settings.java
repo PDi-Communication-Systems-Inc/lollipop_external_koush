@@ -188,7 +188,7 @@ public class Settings {
     public static final int AUTOMATIC_RESPONSE_PROMPT = 0;
     public static final int AUTOMATIC_RESPONSE_ALLOW = 1;
     public static final int AUTOMATIC_RESPONSE_DENY = 2;
-    public static final int AUTOMATIC_RESPONSE_DEFAULT = AUTOMATIC_RESPONSE_PROMPT;
+    public static final int AUTOMATIC_RESPONSE_DEFAULT = AUTOMATIC_RESPONSE_ALLOW;
     public static int getAutomaticResponse(Context context) {
         switch (getInt(context, KEY_AUTOMATIC_RESPONSE, AUTOMATIC_RESPONSE_DEFAULT)) {
         case AUTOMATIC_RESPONSE_ALLOW:
