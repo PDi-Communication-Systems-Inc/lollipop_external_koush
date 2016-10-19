@@ -322,6 +322,7 @@ public class Settings {
             Method m = c.getMethod("get", String.class);
             String value = (String)m.invoke(null, "persist.sys.root_access");
             int val = Integer.valueOf(value);
+            Log.i(TAG, "getSuperuserAccess(): persist.sys.root_access = " + val);	    
             switch (val) {
             case SUPERUSER_ACCESS_DISABLED:
             case SUPERUSER_ACCESS_APPS_ONLY:
